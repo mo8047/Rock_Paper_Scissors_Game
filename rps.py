@@ -44,15 +44,14 @@ while u_input == "y":
     computer_rps = random.choice(computer)
     print(computer_rps)
     
-    if u_input == "Rock" and computer_rps == "Scissors":
+    if u_input == computer_rps:
+        print("It's a draw")
+    elif u_input == "Rock" and computer_rps == "Scissors":
         print("User Wins")
-        #u_input = input("Would you like to play(y/n): ")
     elif u_input == "Paper" and computer_rps == "Rock":
         print("User Wins")
-        #u_input = input("Would you like to play(y/n): ")
     elif u_input == "Scissors" and computer_rps == "Paper":
         print("User Wins")
-        #u_input = input("Would you like to play(y/n): ")
     else:
         print("Computer Wins")
     
